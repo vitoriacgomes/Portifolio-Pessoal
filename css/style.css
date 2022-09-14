@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imagens/Prancheta.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+header .logo{
+    width: 60%;
+}
+header .logo img{
+    width: 50px;
+}
+header .menu ul{
+    display: flex;
+}
+header .menu ul li{
+    padding: 0 20px;
+    list-style: none;
+}
+header .menu ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-size: 20px;
+}
+header .menu ul li a:hover{
+    color: #B6C7EB;
+}
+/* ----- MENU HOME ------*/
+.titulo{
+    margin-top: 170px;
+    margin-left: 70px;
+}
+.titulo h1{
+    font-size: 78px;
+    color: white;
+}
+.titulo p{
+    color: #b0c0e2;
+    font-size: 30px;
+}
+#prancheta-dois{
+    height: 85%;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+}
