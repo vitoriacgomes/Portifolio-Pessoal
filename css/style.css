@@ -18,9 +18,9 @@ header{
     display: flex;
     margin: auto;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; /*alinhamento de container flexivel*/
     position: fixed;
-    z-index: 99;
+    z-index: 99; /*Ordem de empilhamento*/
 }
 header .logo{
     width: 60%;
@@ -28,6 +28,7 @@ header .logo{
 header .logo img{
     width: 50px;
 }
+/*---MENU PRINCIPAL----*/
 header .menu ul{
     display: flex;
 }
@@ -54,7 +55,7 @@ header .menu ul li a:hover{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /*complemento do flex-direction*/
 
 }
 .titulo h1{
@@ -80,7 +81,7 @@ header .menu ul li a:hover{
     background: url(../imagens/Prancheta.jpg);
     background-size: cover;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /*distribuição uniforme dos itens*/
 }
 #about .container .titulo{
     width: 90%;
@@ -119,7 +120,7 @@ header .menu ul li a:hover{
 #portifolio .container{
     width: 100%;
     height: 100vh;
-    background: url(../imagens/Prancheta.jpg);
+    background: url(../imagens/Prancheta\ 2.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -129,33 +130,33 @@ header .menu ul li a:hover{
 #portifolio .container input[type=radio]{
     display: none;
 }
-#portifolio .container .card{
+#portifolio .container .folha{
     position: absolute;
     width: 40%;
     height: 80%;
     left: 0;
     right: 0;
-    margin: 150px auto;
+    margin: 130px auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     transition: 0.4s ease;
     cursor: pointer;
 }
-#portifolio .container .card img{
+#portifolio .container .folha img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }
-#portifolio .container .card h1{
+#portifolio .container .folha h1{
     position: absolute;
     z-index: 9;
     color: #fff;
     font-size: 6rem;
     margin-top: 60px;
 }
-#portifolio .container .card p{
+#portifolio .container .folha p{
     position: absolute;
     z-index: 9;
     width: 400px;
@@ -163,7 +164,7 @@ header .menu ul li a:hover{
     margin-top: 200px;
     text-align: justify;
 }
-#portifolio .container .card nav{
+#portifolio .container .folha nav{
     position: absolute;
     z-index: 9;
     width: 400px;
@@ -171,33 +172,77 @@ header .menu ul li a:hover{
     margin-top: 200px;
     text-align: justify;
 }
-#portifolio .container .card nav #sem-ponto{
+#portifolio .container .folha nav #sem-ponto{
     text-decoration: none;
     list-style: none;
 }
-#portifolio .container .cards{
+#portifolio .container .folhas{
     position: relative;
     width: 100%;
     height: 100%;
 }
-#item-1:checked ~ .cards #song-3,
-#item-2:checked ~ .cards #song-1,
-#item-3:checked ~ .cards #song-2{
+/*----PASSAGEM DOS SLIDES-----*/
+#slide-1:checked ~ .folhas #cursos,
+#slide-2:checked ~ .folhas #estagio-1,
+#slide-3:checked ~ .folhas #linguagens{
     transform: translateX(-40%) scale(0.8);
     opacity: 0.4;
     z-index: 0;
 }
-#item-1:checked ~ .cards #song-2,
-#item-2:checked ~ .cards #song-3,
-#item-3:checked ~ .cards #song-1{
+#slide-1:checked ~ .folhas #linguagens,
+#slide-2:checked ~ .folhas #cursos,
+#slide-3:checked ~ .folhas #estagio-1{
     transform: translateX(40%) scale(0.8);
     opacity: 0.4;
     z-index: 0;
 }
-#item-1:checked ~ .cards #song-1,
-#item-2:checked ~ .cards #song-2,
-#item-3:checked ~ .cards #song-3{
+#slide-1:checked ~ .folhas #estagio-1,
+#slide-2:checked ~ .folhas #linguagens,
+#slide-3:checked ~ .folhas #cursos{
     transform: translateX(0) scale(1);
     opacity: 1;
     z-index: 1;
 }
+/*----MENU CONTATO-----*/
+#contato .container{
+    width: 100%;
+    height: 100vh;
+    background: url(../imagens/Prancheta.jpg);
+    background-size: cover;
+}
+#contato .container .container-contato{
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    padding: 160px 0;
+    margin-left: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#contato .container-contato .info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+#contato .container-contato .info h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#contato .container-contato .linha{
+    width: 350px;
+    height: 3px;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#contato .container-contato .info ion-icon{
+    font-size: 2rem;
+    padding: 20px 0;
+}
+#contato .container-contato .info span{
+    font-size: 1.2rem;
+    padding: 5px 0;
+}
+/*----ICONES-----*/
