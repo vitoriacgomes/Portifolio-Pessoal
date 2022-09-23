@@ -11,7 +11,7 @@ body{
     height: 100vh;
     background: url(../imagens/Prancheta.jpg);
     background-size: cover;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 header{
     width: 100%;
@@ -286,14 +286,26 @@ header .menu ul li a:hover{
     body{
         background: #d1e2f8;
     }
+    header{
+        margin-top: 20px;
+    }
+    header .menu ul li a{
+        font-size: 17px;
+    }
+    #home .container .icons{
+        width: 5%;
+        height: 50vh;
+        padding: 0 50px;
+    }
     #home .container .titulo{
-        height: 65vh;
+        height: 70vh;
         text-align: center;
+        margin-left: -110px;
     }
     #prancheta-dois{
-        height: 40%;
+        height: 43%;
         right: 0;
-        margin-right: -25%;      
+        margin-right: 2%;
     }
     /*about*/
     #about .container{
@@ -301,17 +313,45 @@ header .menu ul li a:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 120vh;
     }
-    /*experiencia*/
+    #about .container .titulo{
+        height: 55%;
+    }
     #about .container .titulo h1{
-        margin-left: -20px;
+        margin-left: 0px;
     }
     #about .container .titulo h2{
-        margin-left: -20px;
-        margin-right: 10px;
+        margin-left: 0px;
     }
     #about .container .titulo p{
-        margin-left: -20px;
+        margin-left: 0px;
+        margin-right: 20px;
         text-overflow: hidden;
+        width: 110%;
+    }
+    #about .container #img-dois{
+        width: 70%;
+        margin-bottom: 20px;
+        margin-top: -60px;
+    }
+    /*experiencia*/
+    #portifolio .container{
+        background: #d1e2f8;
+    }
+    #portifolio .container .folha img{
+        width: 160%;
+        height: 90%;
+    }
+    #portifolio .container .folha h1{
+        font-size: 40px;
+    }
+    #portifolio .container .folha p{
+        width: 120%;
+        margin-top: 150px;
+    }
+    #portifolio .container .folha nav{
+        width: 120%;
+        margin-top: 150px;
     }
 }
