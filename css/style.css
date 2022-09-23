@@ -290,17 +290,17 @@ header .menu ul li a:hover{
         margin-top: 20px;
     }
     header .menu ul li a{
-        font-size: 17px;
+        font-size: 100%;
     }
     #home .container .icons{
         width: 5%;
         height: 50vh;
-        padding: 0 50px;
+        padding: 0 10%;
     }
     #home .container .titulo{
         height: 70vh;
         text-align: center;
-        margin-left: -110px;
+        margin-left: -25%;
     }
     #prancheta-dois{
         height: 43%;
@@ -313,10 +313,10 @@ header .menu ul li a:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 120vh;
+        height: 110vh;
     }
     #about .container .titulo{
-        height: 55%;
+        height: 60%;
     }
     #about .container .titulo h1{
         margin-left: 0px;
@@ -331,9 +331,9 @@ header .menu ul li a:hover{
         width: 110%;
     }
     #about .container #img-dois{
-        width: 70%;
+        width: 60%;
         margin-bottom: 20px;
-        margin-top: -60px;
+        margin-top: 5%;
     }
     /*experiencia*/
     #portifolio .container{
